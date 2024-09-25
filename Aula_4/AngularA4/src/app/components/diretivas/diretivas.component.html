@@ -1,0 +1,22 @@
+<h1>ToDo João Souza</h1>
+
+<div>
+  <ul>
+    <li 
+      *ngFor="let item of listaTarefas"
+      [ngStyle]="{
+        color: item.concluida ? 'black' : 'gray',
+        'text-decoration': item.concluida ? 'none' : 'line-through'
+      }"
+    >
+      {{ item.nome }}
+      <button
+        (click)="concluir(item)"
+        [ngStyle]="{
+          color: item.concluida ? 'black' : 'gray'}"
+        >
+        {{item.concluida ? 'Concluir' : 'Concluido'}}
+      </button>
+    </li>
+  </ul>
+</div>
