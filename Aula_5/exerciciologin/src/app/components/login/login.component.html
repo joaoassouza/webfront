@@ -1,0 +1,20 @@
+<div class="container w-50">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="form-group">
+      <label for="name">Usuário</label>
+      <input type="text" id="name" name="name" class="form-control" ngModel required
+      [ngClass]="{'is-invalid': nome.invalid && myForm.submitted}" #nome="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input type="text" id="password" name="password" class="form-control" ngModel required
+      [ngClass]="{'is-invalid': nome.invalid && myForm.submitted}" #nome="ngModel">
+    </div>
+
+
+    
+    <button type="submit" class="btn btn-primary">
+      Entrar
+    </button>
+  </form>
