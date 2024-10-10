@@ -23,4 +23,8 @@ export class LoginComponent {
       alert("Usuário ou senha incorretos")
     }
   }
+
+  toCadastrar() {
+    this.router.navigate(['/cadastrar']);
+  }
 }

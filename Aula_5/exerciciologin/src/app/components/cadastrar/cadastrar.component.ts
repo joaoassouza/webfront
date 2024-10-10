@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastrar',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './cadastrar.component.css'
 })
 export class CadastrarComponent {
+  constructor(private router:Router ){  }
 
+  
 }

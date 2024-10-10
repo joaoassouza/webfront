@@ -15,6 +15,7 @@ export class HomeComponent {
     this.password = this.router.snapshot.params['password'];
   }
 
+  
 
   ngOninit() {}
 }
